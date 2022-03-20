@@ -8,6 +8,76 @@
   <main>
     <h1 id="title">Good Vibes Form</h1>
 
+<!----code for form below-->
+
+<form action="results.html" method="get"> 
+  <header>Tell us something positive that happened to you today.</header>
+<br>
+    <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required placeholder="Enter Your Name" size="30px" 
+            maxlength="100">
+            <br/>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Enter Your Email Address"
+             size="30px" maxlength="100">
+            <br>
+            <br>
+            <div>
+              <label for="scale">On a scale of 1-10 how good was it?</label>
+              <input type="number" name="scale" id="scale" min="1" max="10">
+            </div>
+            <br>
+            <br/>
+<!---------only added 2 options for now-->
+            Where did it happen?
+            <select name="happen" id="happen">
+                <option value="At home"> At home</option>
+                <option value="At work"> At work</option>
+                </select>
+                <br>
+                At what time of day did it happen?:
+                <label> Morning<input type="radio" name="time" value="Morning"></label>
+            <label> Afternoon<input type="radio" name="time" value="Afternoon"></label>
+            <label> Evening<input type="radio" name="time" value="Evening"></label>
+            <br>
+            <br />
+            <div>
+              What Emotions did you experience?
+              (select all that apply)
+          <div>
+            <label for="excited">Excited</label>
+            <input type="checkbox" name="excited" id="excited">
+            </div>
+            <div>
+              <label for="humbled">Humbled</label>
+              <input type="checkbox" name="humbled" id="humbled">
+              </div>
+            <div>
+              <label for="elated">Elated</label>
+              <input type="checkbox" name="elated" id="elated">
+              </div>
+            <div>
+              <label for="loved">Loved</label>
+              <input type="checkbox" name="loved" id="loved">
+              </div>
+            <div>
+              <label for="enthusiastic">Enthusiastic</label>
+              <input type="checkbox" name="enthusiastic" id="enthusiastic">
+              </div>
+              <br>
+              <br>
+            <div>
+<!---didn't use a placeholder as self explanatory-->
+            <label for="comments">Please Describe Your Positive Experience:</label>
+            <textarea rows="6" cols="40" name="comments" id="comments"></textarea>
+            </div>
+                <br>
+                <br>
+                
+            <button type="submit">Submit</button>
+
+  
+</form>
 </body>
 
 </html>
